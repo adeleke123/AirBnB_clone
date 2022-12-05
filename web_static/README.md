@@ -1,0 +1,10 @@
+Airbnb Clone
+
+
+Description
+
+This is one phase of the Airbnb Clone: the HTML and CSS part. The Images folder holds icons for the site (e.g. logo, bathroom icons, bedroom icons, guest icons). The Styles folder holds CSS styling files. The largest numbered style file of each category (e.g. common, footer, header, places) is most relevant to the finished product. The highlest numbered index.html file is likewise the most relevant to the finished product.
+
+
+![image](https://user-images.githubusercontent.com/106748705/205449942-d7eb0c6e-b023-44f4-b687-97dad90ed807.png)
+
