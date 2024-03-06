@@ -12,6 +12,7 @@ Concepts
 - [AirBnB clone](https://intranet.alxswe.com/concepts/74)
 
 
+![image](https://github.com/adeleke123/AirBnB_clone/assets/51156057/19543c73-28c4-4235-8b47-8fb2625150ce)
 
 
 
