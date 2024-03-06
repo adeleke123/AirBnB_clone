@@ -121,3 +121,46 @@ GitHub
 ------
 There should be one project repository per group. If you clone/fork/whatever a project repository with the same name before the second deadline, you risk a 0% score.
 
+More Info
+----------
+Execution
+----------
+- Your shell should work like this in interactive mode:
+```
+$ ./console.py
+(hbnb) help
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+
+(hbnb) 
+(hbnb) 
+(hbnb) quit
+$
+```
+But also in non-interactive mode: (like the Shell project in C)
+```
+$ echo "help" | ./console.py
+(hbnb)
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb) 
+$
+$ cat test_help
+help
+$
+$ cat test_help | ./console.py
+(hbnb)
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb) 
+$
+```
+- All tests should also pass in non-interactive mode: `$ echo "python3 -m unittest discover tests" | bash`
+
+![image](https://github.com/adeleke123/AirBnB_clone/assets/51156057/917e457b-e532-44fc-a34a-7a71a9062c98)
