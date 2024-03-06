@@ -164,3 +164,9 @@ $
 - All tests should also pass in non-interactive mode: `$ echo "python3 -m unittest discover tests" | bash`
 
 ![image](https://github.com/adeleke123/AirBnB_clone/assets/51156057/917e457b-e532-44fc-a34a-7a71a9062c98)
+
+`Video library(8 total)`
+-----------------------
+- ![image](https://github.com/adeleke123/AirBnB_clone/assets/51156057/a7a43562-3548-4782-a60e-f60b6b4ec14f)
+
+  
