@@ -165,8 +165,19 @@ $
 
 ![image](https://github.com/adeleke123/AirBnB_clone/assets/51156057/917e457b-e532-44fc-a34a-7a71a9062c98)
 
-`Video library(8 total)`
------------------------
-- ![image](https://github.com/adeleke123/AirBnB_clone/assets/51156057/a7a43562-3548-4782-a60e-f60b6b4ec14f)
+Tasks
+-----
+**0. README, AUTHORS        mandatory**
+- Write a `README.md`:
+- description of the project
+- description of the command interpreter:
+- how to start it
+- how to use it
+- examples
+- You should have an `AUTHORS` file at the root of your repository, listing all individuals having contributed content to the repository. For format, reference [Docker’s AUTHORS page](https://github.com/moby/moby/blob/master/AUTHORS)
+- You should use branches and pull requests on GitHub - it will help you as team to organize your work
+**Repo**:
 
+- GitHub repository: `AirBnB_clone`
+- File: `README.md`, `AUTHORS`
   
