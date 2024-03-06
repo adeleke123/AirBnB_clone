@@ -1,3 +1,20 @@
+0x00. AirBnB clone - The console
+=================================
+`Group project` `Python` `OOP`
+ - By: Guillaume
+ - Weight: 5
+
+
+
+
+
+
+
+
+
+
+
+
 <p align="center">
   <img src="https://github.com/bdbaraban/AirBnB_clone/blob/master/assets/hbnb_logo.png" alt="HolbertonBnB logo">
 </p>
