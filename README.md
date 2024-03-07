@@ -538,7 +538,8 @@ guillaume@ubuntu:~/AirBnB$
 - All other arguments should not be used (Ex: `$ update BaseModel 1234-1234-1234 email "aibnb@mail.com" first_name "Betty" = $ update BaseModel 1234-1234-1234 email "aibnb@mail.com"`)
 - `id`, `created_at` and updated_at cant’ be updated. You can assume they won’t be passed in the `update` command
 - Only “simple” arguments can be updated: string, integer and float. You can assume nobody will try to update list of ids or datetime
-**Let’s add some rules:**
+  
+- **Let’s add some rules:**
 
 - You can assume arguments are always in the right order
 - Each arguments are separated by a space
@@ -573,27 +574,29 @@ guillaume@ubuntu:~/AirBnB$ ./console.py
 (hbnb) 
 ```
 
-**No unittests needed**
+- **No unittests needed**
 
-**Repo:**
+- **Repo:**
 
 - GitHub repository: `AirBnB_clone`
 - File: `console.py`
   
-8. First User
-mandatory
-Write a class User that inherits from BaseModel:
+**8. First User      mandatory**
 
-models/user.py
-Public class attributes:
-email: string - empty string
-password: string - empty string
-first_name: string - empty string
-last_name: string - empty string
-Update FileStorage to manage correctly serialization and deserialization of User.
+- Write a class `User` that inherits from `BaseModel`:
 
-Update your command interpreter (console.py) to allow show, create, destroy, update and all used with User.
+- `models/user.py`
 
+- **Public class attributes:**
+- `email`: string - empty string
+- `password`: string - empty string
+- `first_name`: string - empty string
+- `last_name`: string - empty string
+- Update `FileStorage` to manage correctly serialization and deserialization of `User`.
+
+- Update your command interpreter (`console.py`) to allow `show`, `create`, `destroy`, `update` and `all` used with `User`.
+
+```
 guillaume@ubuntu:~/AirBnB$ cat test_save_reload_user.py
 #!/usr/bin/python3
 from models import storage
@@ -657,50 +660,54 @@ guillaume@ubuntu:~/AirBnB$ ./test_save_reload_user.py
 guillaume@ubuntu:~/AirBnB$
 guillaume@ubuntu:~/AirBnB$ cat file.json ; echo ""
 {"BaseModel.af9b4cbd-2ce1-4e6e-8259-f578097dd15f": {"updated_at": "2017-09-28T21:11:12.971544", "__class__": "BaseModel", "id": "af9b4cbd-2ce1-4e6e-8259-f578097dd15f", "created_at": "2017-09-28T21:11:12.971521"}, "User.38f22813-2753-4d42-b37c-57a17f1e4f88": {"password": "63a9f0ea7bb98050796b649e85481845", "created_at": "2017-09-28T21:11:42.848279", "email": "airbnb@mail.com", "id": "38f22813-2753-4d42-b37c-57a17f1e4f88", "last_name": "Bar", "updated_at": "2017-09-28T21:11:42.848291", "first_name": "Betty", "__class__": "User"}, "User.d0ef8146-4664-4de5-8e89-096d667b728e": {"password": "63a9f0ea7bb98050796b649e85481845", "created_at": "2017-09-28T21:11:42.848280", "email": "airbnb_2@mail.com", "id": "d0ef8146-4664-4de5-8e89-096d667b728e", "updated_at": "2017-09-28T21:11:42.848294", "first_name": "John", "__class__": "User"}, "BaseModel.9bf17966-b092-4996-bd33-26a5353cccb4": {"updated_at": "2017-09-28T21:11:14.963058", "__class__": "BaseModel", "id": "9bf17966-b092-4996-bd33-26a5353cccb4", "created_at": "2017-09-28T21:11:14.963049"}, "BaseModel.a42ee380-c959-450e-ad29-c840a898cfce": {"updated_at": "2017-09-28T21:11:15.504296", "__class__": "BaseModel", "id": "a42ee380-c959-450e-ad29-c840a898cfce", "created_at": "2017-09-28T21:11:15.504287"}, "BaseModel.38a22b25-ae9c-4fa9-9f94-59b3eb51bfba": {"updated_at": "2017-09-28T21:11:13.753347", "__class__": "BaseModel", "id": "38a22b25-ae9c-4fa9-9f94-59b3eb51bfba", "created_at": "2017-09-28T21:11:13.753337"}, "BaseModel.2bf3ebfd-a220-49ee-9ae6-b01c75f6f6a4": {"updated_at": "2017-09-28T21:11:14.333862", "__class__": "BaseModel", "id": "2bf3ebfd-a220-49ee-9ae6-b01c75f6f6a4", "created_at": "2017-09-28T21:11:14.333852"}, "User.246c227a-d5c1-403d-9bc7-6a47bb9f0f68": {"password": "root", "created_at": "2017-09-28T21:12:19.611352", "email": "airbnb@mail.com", "id": "246c227a-d5c1-403d-9bc7-6a47bb9f0f68", "last_name": "Bar", "updated_at": "2017-09-28T21:12:19.611363", "first_name": "Betty", "__class__": "User"}, "User.fce12f8a-fdb6-439a-afe8-2881754de71c": {"password": "root", "created_at": "2017-09-28T21:12:19.611354", "email": "airbnb_2@mail.com", "id": "fce12f8a-fdb6-439a-afe8-2881754de71c", "updated_at": "2017-09-28T21:12:19.611368", "first_name": "John", "__class__": "User"}}
-guillaume@ubuntu:~/AirBnB$ 
-No unittests needed for the console
+guillaume@ubuntu:~/AirBnB$
 
-Repo:
+```
 
-GitHub repository: AirBnB_clone
-File: models/user.py, models/engine/file_storage.py, console.py, tests/
+- **No unittests needed for the console**
+
+- **Repo:**
+
+- GitHub repository: `AirBnB_clone`
+- File: `models/user.py, models/engine/file_storage.py, console.py, tests/`
   
-9. More classes!
-mandatory
-Write all those classes that inherit from BaseModel:
+**9. More classes!    mandatory**
 
-State (models/state.py):
-Public class attributes:
-name: string - empty string
-City (models/city.py):
-Public class attributes:
-state_id: string - empty string: it will be the State.id
-name: string - empty string
-Amenity (models/amenity.py):
-Public class attributes:
-name: string - empty string
-Place (models/place.py):
-Public class attributes:
-city_id: string - empty string: it will be the City.id
-user_id: string - empty string: it will be the User.id
-name: string - empty string
-description: string - empty string
-number_rooms: integer - 0
-number_bathrooms: integer - 0
-max_guest: integer - 0
-price_by_night: integer - 0
-latitude: float - 0.0
-longitude: float - 0.0
-amenity_ids: list of string - empty list: it will be the list of Amenity.id later
-Review (models/review.py):
-Public class attributes:
-place_id: string - empty string: it will be the Place.id
-user_id: string - empty string: it will be the User.id
-text: string - empty string
-Repo:
+- Write all those classes that inherit from `BaseModel`:
 
-GitHub repository: AirBnB_clone
-File: models/state.py, models/city.py, models/amenity.py, models/place.py, models/review.py, tests/
+- `State` (`models/state.py`):
+- **Public class attributes:**
+- `name`: string - empty string
+- `City` (`models/city.py`):
+- **Public class attributes:**
+- `state_id`: string - empty string: it will be the `State.id`
+- `name`: string - empty string
+- `Amenity` (`models/amenity.py`):
+- **Public class attributes:**
+- `name`: string - empty string
+- `Place` (`models/place.py`):
+**Public class attributes:**
+- `city_id`: string - empty string: it will be the `City.id`
+- `user_id`: string - empty string: it will be the `User.id`
+- `name`: string - empty string
+- `description`: string - empty string
+- `number_rooms`: integer - 0
+- `number_bathrooms`: integer - 0
+- `max_guest`: integer - 0
+- `price_by_night`: integer - 0
+- `latitude`: float - 0.0
+- `longitude`: float - 0.0
+- `amenity_ids`: list of string - empty list: it will be the list of `Amenity.id` later
+- `Review` (`models/review.py`):
+- **Public class attributes:**
+- `place_id`: string - empty string: it will be the `Place.id`
+- `user_id`: string - empty string: it will be the `User.id`
+- `text`: string - empty string
+
+- **Repo:**
+
+- GitHub repository: `AirBnB_clone`
+- File: `models/state.py, models/city.py, models/amenity.py, models/place.py, models/review.py, tests/`
   
 10. Console 1.0
 mandatory
